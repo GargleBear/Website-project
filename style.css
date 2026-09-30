@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-areas:
+  "header section"
+  "article nav"
+  "article address"
+  "footer footer";
+  grid-template-columns: 2fr 3fr;
+  gap: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: #78f8749f;
+}
+.container div.header {
+  grid-area: "header";
+  text-align: center;
+  color: #000000;
+}
+.container div.section {
+  grid-area: "section";
+  text-align: left;
+  margin-top: 100px;
+  margin-right: 20px;
+  width: 300px;
+  justify-self: end;
+}
+.container div.article {
+  grid-area: "article";
+  background-color: #00000071;
+  padding: 0px;
+}
+.container div.nav {
+  grid-area: "nav";
+  background-color: #67f5ff50
+}
+.container div.address {
+  grid-area: "address";
+  background-color: #67f5ff50
+}
